@@ -1,0 +1,26 @@
+.Presentacion{
+    /* height: 100vh;     */
+    background-color: var(--bg-page-prueba);
+    height: 100vh;/*  esto es asi por que no esta el nav en fixed */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--size-2);
+    color: var(--text-color);
+}
+.Presentacion__Texto{
+    padding: 0 18px 10px;
+    text-align: center;
+}
+#ImgProfile{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 999px;
+}
+
+@media (min-width:768px) {
+    .Presentacion{
+        flex-direction: row;
+    }
+}

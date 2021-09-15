@@ -1,0 +1,56 @@
+.SkillsContainer{
+    padding: 4rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-page-prueba);
+}
+.SkillsContainer > img{
+    width: 20rem;
+}
+.SkillsContainer article span > img{
+    width: 2rem;
+}
+
+.StackSkills{
+    /* width: 17rem; */
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 0px 12px 0px white;
+}
+.StackSkills:hover{
+    box-shadow: 0px 0px 12px 0px red;
+}
+.SubTitle{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0;
+}
+.StackSkills > p{
+    display: flex;
+    width: 19rem;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.to{
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+}
+
+@media (min-width:768px) {
+    .SkillsContainer{
+        /* grid-template-columns: auto auto; */
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

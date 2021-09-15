@@ -21,7 +21,7 @@ const NavBarMobile = () => {
     },[width])
 
     return (
-        <div>
+        
             <footer className={s.footerNavDown} id={showMenu ? s.footerNavTop : 'null'}>
                 { !showMenu?
                     <> 
@@ -64,7 +64,7 @@ const NavBarMobile = () => {
                 }
                 
             </footer>
-        </div>
+    
     )
 }
 

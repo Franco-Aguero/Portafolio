@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-page);
 }
 
 code {
@@ -17,4 +18,6 @@ code {
   --size-2: 1.25rem;
   --size-3: 1.5rem;
   --color-1: white;
+  --bg-page: black/* rgb(233, 227, 227 )*/;
+  --bg-page-prueba:#dbdb00;
 }
