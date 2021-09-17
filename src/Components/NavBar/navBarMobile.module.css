@@ -3,6 +3,7 @@
     min-height: 2.6rem;
     height: auto;
     background-color: var(--bg-page);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +47,7 @@
     flex-direction: column-reverse;
     align-items: center;
     text-decoration: none;
+    color: var(--color-1);
 }
 #darkMode{
     display: none;
@@ -64,7 +66,8 @@
         position: fixed;
         top: 0;
         bottom: auto;
-        border-bottom: 1px solid;
+        border: none;
+        border-bottom: 2px solid white;
         border-radius: 0;
     }
     #footerNavTop{

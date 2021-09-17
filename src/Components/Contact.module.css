@@ -1,0 +1,42 @@
+.SectionContainer{
+    height: auto;
+   /*  background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.ContainerCircle{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.4rem;
+}
+
+.circulo{
+    width: auto/* 2.5rem */;
+    height: auto/* 2.5rem */;
+    border-radius: 999px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    transition: 0.5s;   /* el tiempo que tarda la ejecucion */
+    /* padding: 8px; */
+}
+
+.circulo:hover{
+    color: white;
+    transform: translateY(-1rem);       /* una traslacion a ejecutar */
+}
+/* .circulo:hover::after{
+    content: "holaa";
+    position: absolute;
+    bottom: -1rem;
+} */
+.img{
+    width: 2rem;
+    height: 2rem;
+    padding: 8px;
+}

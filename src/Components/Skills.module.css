@@ -1,6 +1,6 @@
 .SkillsContainer{
     padding: 4rem 0;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -9,6 +9,7 @@
 }
 .SkillsContainer > img{
     width: 20rem;
+    margin-top: 4rem;
 }
 .SkillsContainer article span > img{
     width: 2rem;
@@ -21,7 +22,6 @@
     flex-direction: column;
     border-radius: 14px;
     align-items: center;
-    color: white;
     box-shadow: 0px 0px 12px 0px white;
 }
 .StackSkills:hover{

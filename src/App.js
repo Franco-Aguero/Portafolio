@@ -5,6 +5,8 @@ import AboutMe from './Components/AboutMe';
 
 import Start from './Components/Start';
 import Skills from './Components/Skills';
+import Education from './Components/Education';
+import Contact from './Components/Contact';
 function App() {
   return (
     <div className="App">
@@ -12,7 +14,8 @@ function App() {
       <Route path='/' component={Start}/>
       <Route path='/' component={AboutMe}/>
       <Route path='/' component={Skills}/>
-      
+      <Route path='/' component={Education}/>
+      <Route path='/' component={Contact}/>
     </div>
   );
 }

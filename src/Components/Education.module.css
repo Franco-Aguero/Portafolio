@@ -1,0 +1,29 @@
+.SectionContainer{
+    height: auto;
+    padding-bottom: 4rem;
+    /* background-color: rgb(66, 24, 48); */
+}
+
+.SectionContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionContainer div article{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (min-width:768px) {
+    
+    .SectionContainer div article{
+        width: 68%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
