@@ -27,7 +27,7 @@ const NavBarMobile = () => {
                     <> 
                         <span>Franco</span>
                         <div>
-                            <UilMoon/> 
+                            <UilMoon id={s.darkModeMovile}/> 
                             <UilBars onClick={ () => togleMenu()}/>
                         </div>
                     </>

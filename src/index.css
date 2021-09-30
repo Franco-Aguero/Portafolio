@@ -8,6 +8,17 @@ body {
   background-color: var(--bg-page);
   color: var(--color-1);
 }
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+body::-webkit-scrollbar-track{
+  background: rgb(0, 0, 0);
+  
+}
+body::-webkit-scrollbar-thumb{
+  background: #2a72ce;
+  border-radius: 6px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

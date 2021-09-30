@@ -1,4 +1,5 @@
 import React from 'react';
+import CvPdf from './Images/FRANCO-AGUERO.pdf'
 import s from './AboutMe.module.css';
 const AboutMe = () => {
     return (
@@ -15,9 +16,7 @@ const AboutMe = () => {
                     Otra actividad que disfruto mucho son los deportes.         
                 </p>
 
-                <button id={s.btnDescargaCv}>
-                    Descargar CV
-                </button>
+                <a href={CvPdf} download="Franco-Agüero-CV" id={s.btnDescargaCv} >Descargar CV </a>
             </div> 
         </section>
     )

@@ -18,6 +18,7 @@
 
 #BtnLeft{
   position: absolute;
+  top: 20rem;
   left: 3rem;
   font-size: 3rem;
   cursor: pointer;
@@ -31,6 +32,7 @@
 
 #BtnRight{
   position: absolute;
+  top: 20rem;
   right: 3rem;
   font-size: 3rem;
   cursor: pointer;
@@ -40,4 +42,10 @@
 }
 #BtnRight:hover{
   opacity: 1;
+}
+
+@media (min-width:768px) {
+  #BtnLeft, #BtnRight{
+    top: auto;
+  }
 }

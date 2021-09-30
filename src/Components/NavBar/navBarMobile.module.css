@@ -48,8 +48,13 @@
     align-items: center;
     text-decoration: none;
     color: var(--color-1);
+    transition: 0.5s;
 }
-#darkMode{
+.footerNavDown ul a:hover{
+    color: #2a72ce;
+}
+
+#darkMode, #darkModeMovile{
     display: none;
 }
 #navClose{
@@ -67,7 +72,7 @@
         top: 0;
         bottom: auto;
         border: none;
-        border-bottom: 2px solid white;
+        /* border-bottom: 2px solid white; */
         border-radius: 0;
     }
     #footerNavTop{
@@ -91,6 +96,7 @@
         display: flex;
         position: absolute;
         right: 35px;
+        display: none;
     }
     #navClose{
         display: none;
