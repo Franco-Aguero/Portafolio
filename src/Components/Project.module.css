@@ -1,0 +1,43 @@
+.SectionContainer{
+    /* background-color: rgb(165, 133, 91); */
+    min-height: 40vh;
+    /* position: relative; */
+    /* Provisori */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#BtnLeft{
+  position: absolute;
+  left: 3rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #2C5364;
+  opacity: 0.6;
+  transition: 1s;
+}
+#BtnLeft:hover{
+  opacity: 1;
+}
+
+#BtnRight{
+  position: absolute;
+  right: 3rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #2C5364;
+  opacity: 0.6;
+  transition: 1s;
+}
+#BtnRight:hover{
+  opacity: 1;
+}

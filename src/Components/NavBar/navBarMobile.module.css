@@ -3,7 +3,7 @@
     min-height: 2.6rem;
     height: auto;
     background-color: var(--bg-page);
-    
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
