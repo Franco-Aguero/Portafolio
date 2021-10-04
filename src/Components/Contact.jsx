@@ -1,30 +1,21 @@
 import React from 'react';
-import Linkedin from './Images/ico_linked.png';
-import Email from './Images/ico_email.png';
+import Linkedin from './Images/ico_linked_black1.png';
+import Email from './Images/ico_email_black12.png';
+import Wapp from './Images/ico_whatsapp1.png';
+import ContactCircle from './Views/ContactCircle';
 import s from './Contact.module.css';
 const Contact = () => {
+    const urlLinkedin = "https://www.linkedin.com/in/franco-aguero", name1 = "LinkedIn", bg1 = "rgb(0 119 181 / 81%)";
+    const urlEmail = "https://mail.google.com/a/?view=cm&fs=1&to=aguerofranco2002@gmail.com", name2 = "Gmail", bg2 = "rgb(233 67 52 / 74%)";
+    const urlWhatsapp = "https://wa.link/9x1can", name3 = "WhatsApp", bg3 = "rgb(77 176 81 / 85%)";
     return (
         <section className={s.SectionContainer} id="Contacto">
             <h1 style={{marginBottom:"3rem"}}>Conctacto</h1>
             <div className={s.ContainerCircle}>
-                <div className={s.circulo}>
-                    <a href="https://www.linkedin.com/in/franco-agüero-13706b212" rel="noreferrer" target="_blank">    
-                        <img className={s.img} src={Linkedin} alt="Linkedin"/>
-                    </a>
-                 </div>
-    
-                 <div className={s.circulo}>
-                    <a href="https://mail.google.com/a/?view=cm&fs=1&to=aguerofranco2002@gmail.com" rel="noreferrer" target="_blank">    
-                        <img className={s.img} src={Email} alt="Email"/>
-                    </a>
-                 </div>
-    
-                 <div className={s.circulo}>
-                    <a href="https://wa.link/9x1can" rel="noreferrer" target="_blank">    
-                        <img className={s.img} src="https://image.flaticon.com/icons/png/512/733/733585.png" alt="Whatsapp"/>
-                    </a>
-                 </div>
-               </div>
+                <ContactCircle image={Wapp} url={urlWhatsapp} name={name3} bg={bg3}/>
+                <ContactCircle image={Linkedin} url={urlLinkedin} name={name1} bg={bg1}/>
+                <ContactCircle image={Email} url={urlEmail} name={name2} bg={bg2}/>    
+            </div>
         </section>
     )
 }
