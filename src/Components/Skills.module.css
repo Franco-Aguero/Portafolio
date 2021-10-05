@@ -49,6 +49,9 @@
 }
 
 @media (min-width:768px) {
+    .sectionSkills{
+        padding: 6rem 0 2rem;
+    }
     .SkillsContainer{
         /* grid-template-columns: auto auto; */
         flex-direction: row;

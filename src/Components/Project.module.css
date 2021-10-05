@@ -45,6 +45,10 @@
 }
 
 @media (min-width:768px) {
+  .SectionContainer{
+    padding: 5rem 0 2rem;
+  }
+  
   #BtnLeft, #BtnRight{
     top: auto;
   }

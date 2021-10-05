@@ -30,7 +30,7 @@ const Project = () => {
     return (
         <section className={s.SectionContainer} id="Proyectos">
             
-            <h1>Proyectos</h1>
+            <h1 style={{marginBottom:"3rem"}}>Proyectos</h1>
             <div className={s.SubContainer}>
                 {accountant > 0 && <FontAwesomeIcon icon={faAngleLeft} onClick={ () => setAccountant(accountant = --accountant)} id={s.BtnLeft} />}
                 {

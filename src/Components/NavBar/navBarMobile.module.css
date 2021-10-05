@@ -90,7 +90,7 @@
         font-weight: 500;
     }
     .footerNavDown ul a{
-        padding: 4px 12px;
+        padding: 11px 12px 0;
     }
     #darkMode{
         display: flex;

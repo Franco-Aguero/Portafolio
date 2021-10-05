@@ -3,24 +3,51 @@
     background-color: var(--bg-page-prueba);
     height: 100vh;/*  esto es asi por que no esta el nav en fixed */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: var(--size-2);
     color: var(--text-color);
+    
 }
-.Presentacion__Texto{
+
+.contenedor{
+    display: flex; 
+    column-gap: 2rem;
+}
+
+/* .Presentacion__Texto{
     padding: 0 18px 10px;
     text-align: center;
-}
+} */
 #ImgProfile{
     width: 12rem;
     height: 12rem;
+    border: 5px outset #2a72ce;
     border-radius: 999px;
 }
 
+.tect{
+    text-align: center;
+    padding: 10px 0;
+}
+.tect span{
+    color: #2a72ce;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
 @media (min-width:768px) {
-    .Presentacion{
-        flex-direction: row;
+    /* .Presentacion{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 1rem;
+    } */
+    /* .Presentacion__Texto{
+        width: 20rem;
+    } */
+
+    .tect{
+        width: 20rem;
+        text-align: start;
     }
 }

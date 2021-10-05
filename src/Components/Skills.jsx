@@ -13,7 +13,7 @@ import ReduxJs from './Images/redux.png';
 import s from './Skills.module.css';
 const Skills = () => {
     return (
-        <section id="Skills">
+        <section className={s.sectionSkills} id="Skills">
             <h1 style={{textAlign:"center", marginBottom:"0"}}>Skills</h1>
             <span style={{display:"block", textAlign:"center"}}>Tecnologias conocidas</span>
             <div className={s.SkillsContainer} >

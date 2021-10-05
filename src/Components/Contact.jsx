@@ -1,7 +1,6 @@
 import React from 'react';
-import Linkedin from './Images/ico_linked_black1.png';
-import Email from './Images/ico_email_black12.png';
-import Wapp from './Images/ico_whatsapp1.png';
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import ContactCircle from './Views/ContactCircle';
 import s from './Contact.module.css';
 const Contact = () => {
@@ -12,9 +11,9 @@ const Contact = () => {
         <section className={s.SectionContainer} id="Contacto">
             <h1 style={{marginBottom:"3rem"}}>Conctacto</h1>
             <div className={s.ContainerCircle}>
-                <ContactCircle image={Wapp} url={urlWhatsapp} name={name3} bg={bg3}/>
-                <ContactCircle image={Linkedin} url={urlLinkedin} name={name1} bg={bg1}/>
-                <ContactCircle image={Email} url={urlEmail} name={name2} bg={bg2}/>    
+                <ContactCircle image={faWhatsapp} url={urlWhatsapp} name={name3} bg={bg3}/>
+                <ContactCircle image={faLinkedinIn} url={urlLinkedin} name={name1} bg={bg1}/>
+                <ContactCircle image={faEnvelope} url={urlEmail} name={name2} bg={bg2}/>    
             </div>
         </section>
     )
