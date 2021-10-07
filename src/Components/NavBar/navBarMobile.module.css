@@ -1,6 +1,6 @@
 .footerNavDown{
     width: 100%;
-    min-height: 2.8rem /* 2.6rem */;
+    min-height: 3.4rem /* 2.6rem */;
     height: auto;
     background-color: var(--bg-page);
     z-index: 1;

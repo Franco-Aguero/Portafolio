@@ -1,6 +1,7 @@
 .Presentacion{
     background-color: var(--bg-page-prueba);
-    height: 100vh;/*  esto es asi por que no esta el nav en fixed */
+    /*height: 100vh;  esto es asi por que no esta el nav en fixed */
+    height: calc(100vh - 3.4rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +30,7 @@
 }
 .tect span{
     color: #2a72ce;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.8rem;
 }
 @media (min-width:768px) {
