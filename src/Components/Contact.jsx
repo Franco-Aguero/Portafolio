@@ -9,7 +9,7 @@ const Contact = () => {
     const urlWhatsapp = "https://wa.link/9x1can", name3 = "WhatsApp", bg3 = "rgb(77 176 81 / 85%)";
     return (
         <section className={s.SectionContainer} id="Contacto">
-            <h1 style={{marginBottom:"3rem"}}>Conctacto</h1>
+            <h1 style={{marginBottom:"3rem"}}>Contacto</h1>
             <div className={s.ContainerCircle}>
                 <ContactCircle image={faWhatsapp} url={urlWhatsapp} name={name3} bg={bg3}/>
                 <ContactCircle image={faLinkedinIn} url={urlLinkedin} name={name1} bg={bg1}/>

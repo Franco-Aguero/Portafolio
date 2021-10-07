@@ -61,7 +61,7 @@
     flex-direction: column-reverse;
     align-items: center;
     text-decoration: none;
-    color: /* #143f76 */var(--color-2);
+    color:#2a72ce; 
     transition: 0.5s;
 }
 .footerNavDown ul a:hover{
@@ -104,6 +104,7 @@
         font-weight: 500;
     }
     .footerNavDown ul a{
+        color: /* #143f76 */var(--color-2);
         padding: 11px 12px 0;
     }
     #darkMode{

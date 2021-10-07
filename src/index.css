@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 html{
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Hind', sans-serif, "Helvetica Neue", 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,8 +35,8 @@ code {
   --size-1-1: 1.1rem;
   --size-2: 1.25rem;
   --size-3: 1.5rem;
-  --color-1: white;
-  --color-2: #8a8989;
+  --color-1: white;/* #ebd3d3 */
+  --color-2: #787272/* #8a8989 */;
   --bg-page: black/* rgb(233, 227, 227 )*/;
   /* --bg-page-prueba:#dbdb00; */
 }

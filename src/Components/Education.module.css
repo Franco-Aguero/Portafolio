@@ -18,6 +18,9 @@
 }
 
 @media (min-width:768px) {
+    .SectionContainer{
+        padding: 5rem 0 4rem;
+    }
     
     .SectionContainer div article{
         width: 68%;

@@ -14,15 +14,15 @@ import s from './Skills.module.css';
 const Skills = () => {
     return (
         <section className={s.sectionSkills} id="Skills">
-            <h1 style={{textAlign:"center", marginBottom:"0"}}>Skills</h1>
-            <span style={{display:"block", textAlign:"center"}}>Tecnologias conocidas</span>
+            <h1 style={{textAlign:"center", marginBottom:"0"}}>Technical Skills</h1>
+            {/* <span style={{display:"block", textAlign:"center"}}>Tecnologias conocidas</span> */}
             <div className={s.SkillsContainer} >
                 <img src={Image} alt="Grafic Skill" />
                 <article className={s.StackSkills}>
                     <p className={s.SubTitle}>Front-End</p>
                     <p >
-                        <span className={s.to}>HTML <img src={Css3} alt="Css3" /></span>
-                        <span className={s.to}>CSS <img src={Html5} alt="Html5" /></span>
+                        <span className={s.to}>HTML <img src={Html5} alt="Html5" /></span>
+                        <span className={s.to}>CSS <img src={Css3} alt="Css3" /></span>
                         <span className={s.to}>JavaScript <img src={JavaScript} alt="JavaScript" /></span>
                         <span className={s.to}>React <img src={ReactJs} alt="ReactJs" /></span>
                         <span className={s.to}>Redux <img src={ReduxJs} alt="Redux" /></span>

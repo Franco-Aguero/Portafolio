@@ -45,7 +45,7 @@
     border: none;
     background: #2C5364;
     background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027); 
-    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(#8415bf, #203A43, #3e0288);
     border: 1px solid #6b6a6a;
     opacity: 0.6;
     text-decoration: none;

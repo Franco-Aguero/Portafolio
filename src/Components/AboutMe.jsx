@@ -20,12 +20,12 @@ const AboutMe = () => {
                         
                     </p>
                     <p>
-                        Soy Desarrollador Full Stack y Técnico Informático. <br />
-                        Me gusta aprender cosas nuevas y enfrentarme constantemente a desafios para mejorar en el dia a dia.
+                        Soy Desarrollador Full Stack y Técnico Informático. Me gusta aprender 
+                        cosas nuevas y enfrentarme constantemente a desafios para mejorar en el dia a dia.
                     </p>
                     <p>    
                         Lo que me distingue del resto es la habilidad
-                        de adaptacion, el desenvolvimiento en situaciones complejas y los valores que adquiri en los 
+                        de adaptacion, el desenvolvimiento frente a situaciones complejas y los valores que adquiri en los 
                         deportes que realice.
                     </p>
                     <a href={CvPdf} download="Franco-Agüero-CV" id={s.btnDescargaCv} >Descargar CV </a>

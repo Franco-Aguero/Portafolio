@@ -48,7 +48,7 @@
     width: 100%;
     background: #0F2027;
     background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027); 
-    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(#8415bf, #203A43, #3e0288);/* linear-gradient(to bottom, #2C5364, #203A43, #0F2027); */
     font-size: var(--size-2);
     color: var(--color-1);
     padding: 8px 0;
