@@ -54,7 +54,7 @@
     }
     .SkillsContainer{
         /* grid-template-columns: auto auto; */
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-evenly;
     }
 }

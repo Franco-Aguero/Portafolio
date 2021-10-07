@@ -13,7 +13,7 @@ body {
   color: var(--color-1);
 }
 body::-webkit-scrollbar {
-  width: .5rem;
+  width: .6rem;
 }
 body::-webkit-scrollbar-track{
   background: rgb(0, 0, 0);
@@ -31,9 +31,11 @@ code {
 
 :root{
   --size-1: 1rem;
+  --size-1-1: 1.1rem;
   --size-2: 1.25rem;
   --size-3: 1.5rem;
   --color-1: white;
+  --color-2: #8a8989;
   --bg-page: black/* rgb(233, 227, 227 )*/;
   /* --bg-page-prueba:#dbdb00; */
 }

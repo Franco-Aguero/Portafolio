@@ -1,6 +1,6 @@
 .footerNavDown{
     width: 100%;
-    min-height: 2.6rem;
+    min-height: 2.8rem /* 2.6rem */;
     height: auto;
     background-color: var(--bg-page);
     z-index: 1;
@@ -10,10 +10,24 @@
     position: fixed;
     bottom: 0;
     font-size: var(--size-2);
-    border-top: 1px solid;
+    border-top: 3px solid #18437a;
     transition: 2s;
     border-radius: 6px 6px 0px 0px;
+    /* ultimate */
+    color: #2a72ce;
+    font-weight: 700;
 }
+
+#name{
+    color: #2a72ce;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+#menu{
+    padding-right: 1rem;
+}
+
 #footerNavTop{
     
     min-height: 8rem;
@@ -47,7 +61,7 @@
     flex-direction: column-reverse;
     align-items: center;
     text-decoration: none;
-    color: var(--color-1);
+    color: /* #143f76 */var(--color-2);
     transition: 0.5s;
 }
 .footerNavDown ul a:hover{

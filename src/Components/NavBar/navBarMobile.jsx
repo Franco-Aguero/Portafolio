@@ -25,11 +25,8 @@ const NavBarMobile = () => {
             <footer className={s.footerNavDown} id={showMenu ? s.footerNavTop : 'null'}>
                 { !showMenu?
                     <> 
-                        <span>Franco</span>
-                        <div>
-                            <UilMoon id={s.darkModeMovile}/> 
-                            <UilBars onClick={ () => togleMenu()}/>
-                        </div>
+                        <a href="#Sobre-mi" id={s.name}>Franco</a>
+                        <UilBars id={s.menu} onClick={ () => togleMenu()}/>
                     </>
                     : 
                     <> 
