@@ -12,7 +12,6 @@ const AboutMe = () => {
                 <img src={Gif} alt="Developent" />    
 
                 <div className={s.right}>
-               {/*  <FontAwesomeIcon icon={faArrowDown}  className={s.icono} /> */}
                     <p>
                         Me llamo Franco, soy de Buenos Aires, Argentina.
                         En mis tiempos libres me gusta compartir
@@ -28,7 +27,10 @@ const AboutMe = () => {
                         de adaptacion, el desenvolvimiento frente a situaciones complejas y los valores que adquiri en los 
                         deportes que realice.
                     </p>
-                    <a href={CvPdf} download="Franco-Agüero-CV" id={s.btnDescargaCv} >Descargar CV </a>
+                    <a href={CvPdf} download="Franco-Agüero-CV" id={s.btnDescargaCv} >
+                        Descargar CV 
+                        <FontAwesomeIcon icon={faArrowDown} id={s.icon} />
+                    </a>
 
                 </div>          
             </div> 
