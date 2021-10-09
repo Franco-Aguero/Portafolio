@@ -1,8 +1,9 @@
 import React from 'react';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import ContactCircle from './Views/ContactCircle';
 import s from './Contact.module.css';
+
 const Contact = () => {
     const urlLinkedin = "https://www.linkedin.com/in/franco-aguero", name1 = "LinkedIn", bg1 = "rgb(0 119 181 / 81%)";
     const urlEmail = "https://mail.google.com/a/?view=cm&fs=1&to=aguerofranco2002@gmail.com", name2 = "Gmail", bg2 = "rgb(233 67 52 / 74%)";

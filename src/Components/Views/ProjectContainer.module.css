@@ -1,16 +1,4 @@
 .container{
-    /* display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    border: 1px solid rgb(139, 139, 139); */
-    /* Provisorio */
-    /* position: relative;
-    width: 80%;
-    justify-content: CENTER;
-    border: 1px solid rgb(48 67 110);
-    gap: 3rem;
-    padding: 35px 4px;
-    border-radius: 6px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,19 +29,18 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .row2 p{
     font-size: var(--size-2);
 }
+
 .row2 a{
     width: 100%;
     font-weight: 500;
-    /* background: linear-gradient(
-        164deg,#8415bf , #3e0288 ); */
-    background: linear-gradient( 164deg,#8415bf , #3e0288 56px);
+    background: var(--bg-button);
     font-size: var(--size-2);
     color: var(--color-1);
     padding: 8px 0;
-    /* border: 1px solid #6b6a6a; */
     box-shadow: 0px 0px 4px 1px #6b6a6a;
     border-radius: 4px;
     text-decoration: none;
@@ -65,36 +52,33 @@
 }
 .row2 a:hover{
     opacity: 0.9;
-    /* border: 1px solid transparent; */
-    /* box-shadow: 0px 0px 0px 0px #6b6a6a; */
 }
 
 @media (min-width:768px) {
     .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding: 10px;
-        border: 1px solid rgb(139, 139, 139);
-        /* Provisorio */
         position: relative;
         width: 80%;
-        justify-content: CENTER;
-        border: 1px solid rgb(48 67 110);
+        justify-content: center;
+        border: 1px solid rgb(48, 67, 110);
         gap: 3rem;
         padding: 35px 4px;
         border-radius: 6px;
     }
+
     .row1{
         display: flex;
         justify-content: center;
     }
+
     .container .row1 > img{
         width: 92%;
         height: 50vh;
         box-shadow: 0px 0px 8px 2px #6b6a6a;
         border-radius: 6px;
     }
+
     .row2{
         width: 40%;
         align-items: flex-start;
@@ -108,6 +92,7 @@
         margin-top: 2rem;
         opacity: 0.6;
     }
+    
     .container h3{
         bottom: -36px;
     }

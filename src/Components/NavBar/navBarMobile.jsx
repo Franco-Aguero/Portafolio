@@ -21,14 +21,14 @@ const NavBarMobile = () => {
     },[width])
 
     return (
-        
             <footer className={s.footerNavDown} id={showMenu ? s.footerNavTop : 'null'}>
-                { !showMenu?
+                { 
+                !showMenu?
                     <> 
                         <a href="#Sobre-mi" id={s.name}>Franco</a>
                         <UilBars id={s.menu} onClick={ () => togleMenu()}/>
                     </>
-                    : 
+                : 
                     <> 
                         <ul>
                             <li>
@@ -59,9 +59,7 @@ const NavBarMobile = () => {
                         <UilMoon id={s.darkMode}/> 
                     </>
                 }
-                
             </footer>
-    
     )
 }
 

@@ -21,7 +21,7 @@ body::-webkit-scrollbar-track{
   
 }
 body::-webkit-scrollbar-thumb{
-  background: #2a72ce;
+  background: var(--color-3);
   border-radius: 6px;
 }
 
@@ -35,8 +35,10 @@ code {
   --size-1-1: 1.1rem;
   --size-2: 1.25rem;
   --size-3: 1.5rem;
-  --color-1: white;/* #ebd3d3 */
-  --color-2: #787272/* #8a8989 */;
-  --bg-page: black/* rgb(233, 227, 227 )*/;
-  /* --bg-page-prueba:#dbdb00; */
+  --color-1: white;
+  --color-2: #787272;
+  --color-3: #2a72ce;
+  --color-arrow-L-R: #2C5364;
+  --bg-page: black;
+  --bg-button: linear-gradient( 164deg,#8415bf , #3e0288 56px);
 }

@@ -1,4 +1,3 @@
-import './App.css';
 import { Route } from 'react-router-dom';
 import NavBarMobile from './Components/NavBar/navBarMobile';
 import AboutMe from './Components/AboutMe';
@@ -9,7 +8,7 @@ import Education from './Components/Education';
 import Contact from './Components/Contact';
 import Background from './Components/Bg/Background';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Route path='/' component={NavBarMobile}/>

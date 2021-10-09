@@ -1,6 +1,5 @@
 .Presentacion{
     background-color: var(--bg-page-prueba);
-    /*height: 100vh;  esto es asi por que no esta el nav en fixed */
     height: calc(100vh - 3.4rem);
     display: flex;
     flex-direction: column;
@@ -8,7 +7,6 @@
     align-items: center;
     font-size: var(--size-2);
     color: var(--text-color);
-    
 }
 
 .contenedor{
@@ -20,7 +18,7 @@
 #ImgProfile{
     width: 12rem;
     height: 12rem;
-    border: 5px outset #2a72ce;
+    border: 5px outset var(--color-3);
     border-radius: 999px;
 }
 
@@ -28,16 +26,19 @@
     text-align: center;
     padding: 10px 0;
 }
+
 .tect span{
-    color: #2a72ce;
+    color: var(--color-3);
     font-weight: 900;
     font-size: 1.8rem;
 }
+
 @media (min-width:768px) {
     .Presentacion{
         height: auto;
         padding: 13rem 0 8rem;
     }
+    
     .contenedor{
         display: flex;
         flex-direction: row;

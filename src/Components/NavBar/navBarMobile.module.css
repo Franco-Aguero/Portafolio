@@ -1,6 +1,6 @@
 .footerNavDown{
     width: 100%;
-    min-height: 3.4rem /* 2.6rem */;
+    min-height: 3.4rem;
     height: auto;
     background-color: var(--bg-page);
     z-index: 1;
@@ -14,12 +14,12 @@
     transition: 2s;
     border-radius: 6px 6px 0px 0px;
     /* ultimate */
-    color: #2a72ce;
+    color: var(--color-3)/* #2a72ce */;
     font-weight: 700;
 }
 
 #name{
-    color: #2a72ce;
+    color: var(--color-3)/* #2a72ce */;
     text-decoration: none;
     margin-left: 2rem;
 }
@@ -29,22 +29,10 @@
 }
 
 #footerNavTop{
-    
     min-height: 8rem;
     justify-content: center;
-    /* animation: top;
-    animation-name: top;
-    animation-timing-function: linear; */
 }
-/* @keyframes top{
-    0% {
-        min-height:2.6rem;
-    }
-    100% {
-        background-color: blueviolet;
-        height: 8rem;
-    }
-} */
+
 .footerNavDown ul{
     display: grid;
     width: auto;
@@ -56,26 +44,30 @@
     font-size: var(--size-1);
     font-weight: 800;
 }
+
 .footerNavDown ul a{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     text-decoration: none;
-    color:#2a72ce; 
+    color: var(--color-3)/* #2a72ce */; 
     transition: 0.5s;
 }
+
 .footerNavDown ul a:hover{
-    color: #2a72ce;
+    color: var(--color-3)/* #2a72ce */;
 }
 
 #darkMode, #darkModeMovile{
     display: none;
 }
+
 #navClose{
     position: absolute;
     top: 10px;
     right: 20px;
 }
+
 @media (min-width:768px) {
     .footerNavDown{
         height: auto;
@@ -86,12 +78,13 @@
         top: 0;
         bottom: auto;
         border: none;
-        /* border-bottom: 2px solid white; */
         border-radius: 0;
     }
+
     #footerNavTop{
         min-height: auto;
     }
+
     .footerNavDown ul{
         grid-template-columns: repeat(6, auto);
         grid-column-gap: 0;
@@ -99,18 +92,20 @@
         padding: 0;
         margin: 0;  
     }
+    
     .footerNavDown ul a{
         color: /* #143f76 */var(--color-2);
         padding: 11px 12px 0;
     }
+
     #darkMode{
         display: flex;
         position: absolute;
         right: 35px;
         display: none;
     }
+    
     #navClose{
         display: none;
     }
-
 }

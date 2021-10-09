@@ -1,16 +1,16 @@
 import React from 'react';
-import CvPdf from './Images/FRANCO-AGUERO.pdf'
+import CvPdf from './Images/FRANCO-AGUERO.pdf';
 import Gif from './Images/gifa1.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import s from './AboutMe.module.css';
+
 const AboutMe = () => {
     return (
         <section className={s.sobreMi} id="Sobre-mi">
            <h1>Sobre mi</h1>
             <div className={s.contenedorTextCv}>   
                 <img src={Gif} alt="Developent" />    
-
                 <div className={s.right}>
                     <p>
                         Me llamo Franco, soy de Buenos Aires, Argentina.
@@ -31,10 +31,8 @@ const AboutMe = () => {
                         Descargar CV 
                         <FontAwesomeIcon icon={faArrowDown} id={s.icon} />
                     </a>
-
                 </div>          
-            </div> 
-            
+            </div>             
         </section>
     )
 }

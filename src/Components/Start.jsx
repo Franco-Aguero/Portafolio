@@ -2,14 +2,12 @@ import React from 'react';
 import Profile from './Images/profile.jpg';
 import Typewriter from 'typewriter-effect';
 import s from './Start.module.css';
-const Start = () => {
-    
+
+const Start = () => {  
     return (
         <section className={s.Presentacion} id="Inicio">
             <div className={s.contenedor}>
                 <img id={s.ImgProfile} src={Profile} alt="Profile" />
-
-                
                 <div className={s.tect}>
                     <h1>Hola!</h1>
                     <h2>Soy Franco</h2>
@@ -20,10 +18,8 @@ const Start = () => {
                         loop: true,
                     }}
                     />
-                </div>
-            
-            </div>
-            
+                </div>         
+            </div>          
         </section>
     )
 }

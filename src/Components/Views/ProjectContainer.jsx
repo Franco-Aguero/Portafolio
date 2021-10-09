@@ -20,8 +20,7 @@ function ProjectContainer({ image, nameProject, url, information, BackTech, Fron
                 
                 <a href={url} rel="noreferrer" target="_blank">
                     GitHub
-                </a>
-                
+                </a>   
             </div>
         </div>
     )

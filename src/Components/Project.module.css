@@ -1,8 +1,5 @@
 .SectionContainer{
-    /* background-color: rgb(165, 133, 91); */
     min-height: 40vh;
-    /* position: relative; */
-    /* Provisori */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +19,7 @@
   left: 3rem;
   font-size: 3rem;
   cursor: pointer;
-  color: #2C5364;
+  color: var(--color-arrow-L-R);
   opacity: 0.6;
   transition: 1s;
 }
@@ -36,10 +33,11 @@
   right: 3rem;
   font-size: 3rem;
   cursor: pointer;
-  color: #2C5364;
+  color: var(--color-arrow-L-R);
   opacity: 0.6;
   transition: 1s;
 }
+
 #BtnRight:hover{
   opacity: 1;
 }

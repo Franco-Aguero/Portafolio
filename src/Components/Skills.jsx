@@ -9,13 +9,12 @@ import ReactJs from './Images/react.png';
 import JavaScript from './Images/javascript.png'
 import Sequelize from './Images/sequelize.png'
 import ReduxJs from './Images/redux.png';
-
 import s from './Skills.module.css';
+
 const Skills = () => {
     return (
         <section className={s.sectionSkills} id="Skills">
             <h1 style={{textAlign:"center", marginBottom:"0"}}>Technical Skills</h1>
-            {/* <span style={{display:"block", textAlign:"center"}}>Tecnologias conocidas</span> */}
             <div className={s.SkillsContainer} >
                 <img src={Image} alt="Grafic Skill" />
                 <article className={s.StackSkills}>
@@ -37,7 +36,6 @@ const Skills = () => {
                 </article>
             </div>
         </section>
-        
     )
 }
 

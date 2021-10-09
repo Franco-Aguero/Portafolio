@@ -1,6 +1,6 @@
 import React from 'react';
-
 import s from './Education.module.css';
+
 const Education = () => {
     return (
         <section className={s.SectionContainer} id="Educacion">
@@ -14,7 +14,6 @@ const Education = () => {
                     <span>Full Stack Developer</span>
                     <span>2021</span>
                 </article>
-
                 <article>
                     <h3>
                         Secundaria <br/>
