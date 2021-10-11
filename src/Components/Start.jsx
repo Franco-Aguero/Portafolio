@@ -5,10 +5,10 @@ import s from './Start.module.css';
 
 const Start = () => {  
     return (
-        <section className={s.Presentacion} id="Inicio">
-            <div className={s.contenedor}>
+        <section className={s.Presentation} id="Inicio">
+            <div className={s.container}>
                 <img id={s.ImgProfile} src={Profile} alt="Profile" />
-                <div className={s.tect}>
+                <div className={s.movingText}>
                     <h1>Hola!</h1>
                     <h2>Soy Franco</h2>
                     <Typewriter

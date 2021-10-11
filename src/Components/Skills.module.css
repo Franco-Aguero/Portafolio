@@ -44,7 +44,7 @@
     justify-content: center;
 }
 
-.to{
+.StackSkills p > span{
    display: flex;
    flex-direction: column-reverse;
    align-items: center;

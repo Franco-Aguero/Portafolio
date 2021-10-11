@@ -1,6 +1,6 @@
 import React from 'react';
 import CvPdf from './Images/FRANCO-AGUERO.pdf';
-import Gif from './Images/gifa1.png';
+import Gif from './Images/illustratorMen.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import s from './AboutMe.module.css';

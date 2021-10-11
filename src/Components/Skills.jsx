@@ -20,18 +20,18 @@ const Skills = () => {
                 <article className={s.StackSkills}>
                     <p className={s.SubTitle}>Front-End</p>
                     <p >
-                        <span className={s.to}>HTML <img src={Html5} alt="Html5" /></span>
-                        <span className={s.to}>CSS <img src={Css3} alt="Css3" /></span>
-                        <span className={s.to}>JavaScript <img src={JavaScript} alt="JavaScript" /></span>
-                        <span className={s.to}>React <img src={ReactJs} alt="ReactJs" /></span>
-                        <span className={s.to}>Redux <img src={ReduxJs} alt="Redux" /></span>
+                        <span>HTML <img src={Html5} alt="Html5" /></span>
+                        <span>CSS <img src={Css3} alt="Css3" /></span>
+                        <span>JavaScript <img src={JavaScript} alt="JavaScript" /></span>
+                        <span>React <img src={ReactJs} alt="ReactJs" /></span>
+                        <span>Redux <img src={ReduxJs} alt="Redux" /></span>
                     </p>
                     <p className={s.SubTitle}>Back-End</p>
                     <p>
-                        <span className={s.to}>Node <img src={Node} alt="NodeJs" /></span>
-                        <span className={s.to}>Express <img src={Express} alt="Express" /></span>
-                        <span className={s.to}>Postgres <img src={Postgresql} alt="PostgreSQL" /></span>
-                        <span className={s.to}>Sequelize <img src={Sequelize} alt="Sequelize" /></span>
+                        <span>Node <img src={Node} alt="NodeJs" /></span>
+                        <span>Express <img src={Express} alt="Express" /></span>
+                        <span>Postgres <img src={Postgresql} alt="PostgreSQL" /></span>
+                        <span>Sequelize <img src={Sequelize} alt="Sequelize" /></span>
                     </p>
                 </article>
             </div>
