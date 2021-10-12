@@ -35,11 +35,20 @@
         padding: 2px;
     }
 
-    .circle:hover{
-        color: white;
+    .icon{
+        font-size: 2rem;
+        color: var(--color-3);
+        opacity: 0.5;
+        transition: 0.5s;
+        border-bottom:1px solid transparent;
+    }
+
+    .icon:hover{
+        opacity: 1;
+        color: var(--color-3);
         transform: translateY(-1rem);   
     }
-    
+
     .circle span{
         display: none;
     }
