@@ -1,7 +1,7 @@
 .circle{
     max-width: 14rem;
     width: 80%;
-    height: auto;
+    height: 2.5rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
 
 .icon{
     font-size: 1.4rem;
-    padding: 8px;
+    padding: 4px 8px 7px 8px;
 }
 
 @media (min-width:768px) {
