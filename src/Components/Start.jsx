@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from './Images/profile.jpg';
+import Profile from './Images/profile.jpeg';
 import Typewriter from 'typewriter-effect';
 import s from './Start.module.css';
 
