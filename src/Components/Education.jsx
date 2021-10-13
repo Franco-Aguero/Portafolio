@@ -4,7 +4,7 @@ import s from './Education.module.css';
 const Education = () => {
     return (
         <section className={s.SectionContainer} id="Educacion">
-            <h1 style={{textAlign:"center"}}>Educacion</h1>
+            <h1 style={{textAlign:"center"}}>Educación</h1>
             <div>
                 <article>
                     <h3>
@@ -17,7 +17,7 @@ const Education = () => {
                 <article>
                     <h3>
                         Secundaria <br/>
-                        Tecnica N°1 "O.E.A"
+                        Técnica N°1 "O.E.A"
                     </h3>
                     <span>Técnico Informático</span>
                     <span>2014-2020</span>

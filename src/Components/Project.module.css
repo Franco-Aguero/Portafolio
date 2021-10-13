@@ -13,41 +13,8 @@
   justify-content: center;
 }
 
-#BtnLeft{
-  position: absolute;
-  top: 20rem;
-  left: 3rem;
-  font-size: 3rem;
-  cursor: pointer;
-  color: var(--color-arrow-L-R);
-  opacity: 0.6;
-  transition: 1s;
-}
-#BtnLeft:hover{
-  opacity: 1;
-}
-
-#BtnRight{
-  position: absolute;
-  top: 20rem;
-  right: 3rem;
-  font-size: 3rem;
-  cursor: pointer;
-  color: var(--color-arrow-L-R);
-  opacity: 0.6;
-  transition: 1s;
-}
-
-#BtnRight:hover{
-  opacity: 1;
-}
-
 @media (min-width:768px) {
   .SectionContainer{
     padding: 5rem 0 2rem;
-  }
-  
-  #BtnLeft, #BtnRight{
-    top: auto;
   }
 }

@@ -9,7 +9,7 @@ const Start = () => {
             <div className={s.container}>
                 <img id={s.ImgProfile} src={Profile} alt="Profile" />
                 <div className={s.movingText}>
-                    <h1>Hola!</h1>
+                    <h1>¡Hola!</h1>
                     <h2>Soy Franco</h2>
                     <Typewriter
                     options={{

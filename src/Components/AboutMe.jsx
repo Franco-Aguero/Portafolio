@@ -24,7 +24,7 @@ const AboutMe = () => {
                     </p>
                     <p>    
                         Lo que me distingue del resto es la habilidad
-                        de adaptacion, el desenvolvimiento frente a situaciones complejas y los valores que adquiri en los 
+                        de adaptación, el desenvolvimiento frente a situaciones complejas y los valores que adquirí en los 
                         deportes que realice.
                     </p>
                     <a href={CvPdf} download="Franco-Agüero-CV" id={s.btnDescargaCv} >

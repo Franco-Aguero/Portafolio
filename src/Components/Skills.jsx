@@ -14,7 +14,7 @@ import s from './Skills.module.css';
 const Skills = () => {
     return (
         <section className={s.sectionSkills} id="Skills">
-            <h1 style={{textAlign:"center", marginBottom:"0"}}>Technical Skills</h1>
+            <h1 style={{textAlign:"center", marginBottom:"0"}}>Habilidades técnicas</h1>
             <div className={s.SkillsContainer} >
                 <img src={Image} alt="Grafic Skill" />
                 <article className={s.StackSkills}>
