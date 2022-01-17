@@ -1,14 +1,14 @@
 import React from 'react';
-import Image from './Images/skill.png';
-import Css3 from './Images/css3.png';
-import Html5 from './Images/html5.png';
-import Express from './Images/express.svg';
-import Node from './Images/node.png';
-import Postgresql from './Images/postgresql.png';
-import ReactJs from './Images/react.png';
-import JavaScript from './Images/javascript.png'
-import Sequelize from './Images/sequelize.png'
-import ReduxJs from './Images/redux.png';
+import Image from '../Images/skill.png';
+import Css3 from '../Images/css3.png';
+import Html5 from '../Images/html5.png';
+import Express from '../Images/express.svg';
+import Node from '../Images/node.png';
+import Postgresql from '../Images/postgresql.png';
+import ReactJs from '../Images/react.png';
+import JavaScript from '../Images/javascript.png'
+import Sequelize from '../Images/sequelize.png'
+import ReduxJs from '../Images/redux.png';
 import s from './Skills.module.css';
 
 const Skills = () => {

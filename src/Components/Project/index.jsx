@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import PokeApp from './Images/PokeApp2.png';
-import NoteBlock from './Images/BlockOfNote2.png';
-import Wallet from './Images/wallet.png';
-import Skillify from './Images/skillify.png';
-import ProjectContainer from "./Views/ProjectContainer";
+import PokeApp from '../Images/PokeApp2.png';
+import NoteBlock from '../Images/BlockOfNote2.png';
+import Wallet from '../Images/wallet.png';
+import Skillify from '../Images/skillify.png';
+import ProjectContainer from "../Views/ProjectContainer";
 import s from './Project.module.css';
 
 const Project = () => {

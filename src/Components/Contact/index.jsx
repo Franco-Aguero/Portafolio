@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import ContactCircle from './Views/ContactCircle';
+import ContactCircle from '../Views/ContactCircle';
 import s from './Contact.module.css';
 
 const Contact = () => {
