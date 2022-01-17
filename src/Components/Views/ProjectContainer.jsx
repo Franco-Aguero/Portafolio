@@ -11,7 +11,7 @@ function ProjectContainer({ image, nameProject, url, information, BackTech, Fron
                 <img src={image} alt={nameProject} />
                
                 {numPage > 0 && <FontAwesomeIcon icon={faAngleLeft} onClick={ () => cmb(numPage = --numPage)} id={s.BtnLeft} />}
-                {numPage < 2 && <FontAwesomeIcon icon={faAngleRight} onClick={ () => cmb(numPage = ++numPage)} id={s.BtnRight}/>}
+                {numPage < 3 && <FontAwesomeIcon icon={faAngleRight} onClick={ () => cmb(numPage = ++numPage)} id={s.BtnRight}/>}
             </div>
             
             <div className={s.row2}>
