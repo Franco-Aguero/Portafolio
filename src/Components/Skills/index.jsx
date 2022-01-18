@@ -1,37 +1,35 @@
 import React from 'react';
 import Image from '../Images/skill.png';
-import Css3 from '../Images/css3.png';
-import Html5 from '../Images/html5.png';
-import Express from '../Images/express.svg';
-import Node from '../Images/node.png';
-import Postgresql from '../Images/postgresql.png';
-import ReactJs from '../Images/react.png';
-import JavaScript from '../Images/javascript.png'
-import Sequelize from '../Images/sequelize.png'
-import ReduxJs from '../Images/redux.png';
+import informationUsed from './informationUsed';
 import s from './Skills.module.css';
 
 const Skills = () => {
+    const {frontEnd, backEnd, sectionTitle} = informationUsed;
     return (
         <section className={s.sectionSkills} id="Skills">
-            <h1 style={{textAlign:"center", marginBottom:"0"}}>Habilidades técnicas</h1>
+            <h1 style={{textAlign:"center", marginBottom:"0"}}>{sectionTitle.es}</h1>
             <div className={s.SkillsContainer} >
                 <img src={Image} alt="Grafic Skill" />
                 <article className={s.StackSkills}>
                     <p className={s.SubTitle}>Front-End</p>
                     <p >
-                        <span>HTML <img src={Html5} alt="Html5" /></span>
-                        <span>CSS <img src={Css3} alt="Css3" /></span>
-                        <span>JavaScript <img src={JavaScript} alt="JavaScript" /></span>
-                        <span>React <img src={ReactJs} alt="ReactJs" /></span>
-                        <span>Redux <img src={ReduxJs} alt="Redux" /></span>
+                        {
+                            frontEnd.map( el => 
+                                <span>
+                                    {el.name} <img src={el.img} alt={el.name}/>
+                                </span>
+                            )
+                        }
                     </p>
                     <p className={s.SubTitle}>Back-End</p>
                     <p>
-                        <span>Node <img src={Node} alt="NodeJs" /></span>
-                        <span>Express <img src={Express} alt="Express" /></span>
-                        <span>Postgres <img src={Postgresql} alt="PostgreSQL" /></span>
-                        <span>Sequelize <img src={Sequelize} alt="Sequelize" /></span>
+                        {
+                            backEnd.map( el => 
+                                <span>
+                                    {el.name} <img src={el.img} alt={el.name}/>
+                                </span>
+                            )
+                        }
                     </p>
                 </article>
             </div>
