@@ -3,6 +3,7 @@ import NoteBlock from '../Images/BlockOfNote2.png';
 import Wallet from '../Images/wallet.png';
 import Skillify from '../Images/skillify.png';
 export default {
+    sectionTitle: {es:"Proyectos", en:"",},
     projectList: [
         {
             name:"Payment Systems",

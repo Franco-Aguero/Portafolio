@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { UilBars, UilMoon, UilGraduationCap, UilUser, UilBracketsCurly, UilClipboardNotes, UilEnvelopeCheck, UilEstate, UilTimesSquare } from '@iconscout/react-unicons'
+import { UilBars, UilTimesSquare } from '@iconscout/react-unicons';
+import informationUsed from './informationUsed';
+import utils from '../Utils/utils';
 import s from './navBarMobile.module.css'
 
 const NavBarMobile = () => {
+    const { nameList } = informationUsed, {spacebarToDash} = utils;
     let [showMenu, setShowMenu] = useState(false)
     let [width, setWidth] = useState(window.innerWidth)
 
@@ -31,32 +34,17 @@ const NavBarMobile = () => {
                 : 
                     <> 
                         <ul>
-                            <li>
-                                <a href="#Inicio" onClick={ ()=> width > 768? null : togleMenu()}> Inicio <UilEstate/></a>
-                            </li>
-
-                            <li>
-                                <a href="#Sobre-mi" onClick={ () => width > 768? null : togleMenu()}> Sobre mi <UilUser/></a>
-                            </li>
-            
-                            <li>
-                                <a href="#Skills" onClick={ () => width > 768? null : togleMenu()}>Skills <UilBracketsCurly/></a>
-                            </li>
-            
-                            <li>
-                                <a href="#Proyectos" onClick={ () => width > 768? null : togleMenu()}>Proyectos <UilClipboardNotes/></a> 
-                            </li>
-
-                            <li>
-                                <a href="#Educacion" onClick={ () => width > 768? null : togleMenu()}>Educacion <UilGraduationCap/> </a>
-                            </li>
-                            
-                            <li>
-                                <a href="#Contacto" onClick={ () => width > 768? null : togleMenu()}>Contacto <UilEnvelopeCheck/></a> 
-                            </li>
+                            {
+                                nameList.map( el =>
+                                    <li>
+                                        <a href={`#${spacebarToDash(el.es)}`} onClick={ ()=> width > 768? null : togleMenu()}> 
+                                            {el.es} {el.icon}
+                                        </a>
+                                    </li>
+                                )                 
+                            }
                             <UilTimesSquare id={s.navClose} onClick={ () => togleMenu() }/>
                         </ul>
-                        <UilMoon id={s.darkMode}/> 
                     </>
                 }
             </footer>

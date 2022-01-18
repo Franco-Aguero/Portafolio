@@ -4,11 +4,11 @@ import ProjectContainer from "../Views/ProjectContainer";
 import s from './Project.module.css';
 
 const Project = () => {
-    const { projectList } = informationUsed;
+    const { sectionTitle, projectList } = informationUsed;
     let [accountant, setAccountant] = useState(0);
     return (
         <section className={s.SectionContainer} id="Proyectos">
-            <h1 style={{marginBottom:"3rem"}}>Proyectos</h1>
+            <h1 style={{marginBottom:"3rem"}}>{sectionTitle.es}</h1>
             <div className={s.SubContainer}>    
                 <ProjectContainer numPage={accountant} cmb={setAccountant} 
                     nameProject={projectList[accountant].name} image={projectList[accountant].img} 
