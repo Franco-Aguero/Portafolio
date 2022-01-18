@@ -7,7 +7,7 @@ import Node from '../Images/node.png';
 import Express from '../Images/express.svg';
 import Postgresql from '../Images/postgresql.png';
 import Sequelize from '../Images/sequelize.png'
-export default {
+const informationUsed = {
     frontEnd:[
         { name:"HTML", img: Html5},
         { name:"CSS", img: Css3},
@@ -26,3 +26,4 @@ export default {
         en:"",
     }
 }
+export default informationUsed;

@@ -1,5 +1,5 @@
 import { UilGraduationCap, UilUser, UilBracketsCurly, UilClipboardNotes, UilEnvelopeCheck, UilEstate } from '@iconscout/react-unicons';
-export default {
+const informationUsed = {
     nameList: [ 
         {icon: <UilEstate/>, es:"Inicio", en:""},
         {icon: <UilUser/>, es:"Sobre mi", en:""},
@@ -9,3 +9,4 @@ export default {
         {icon: <UilEnvelopeCheck/>, es:"Contacto", en:""},
     ]
 }
+export default informationUsed;

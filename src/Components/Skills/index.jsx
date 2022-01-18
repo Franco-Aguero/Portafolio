@@ -5,6 +5,7 @@ import s from './Skills.module.css';
 
 const Skills = () => {
     const {frontEnd, backEnd, sectionTitle} = informationUsed;
+    let frontEndKey = 0, backEndKey = 0;
     return (
         <section className={s.sectionSkills} id="Skills">
             <h1 style={{textAlign:"center", marginBottom:"0"}}>{sectionTitle.es}</h1>
@@ -15,7 +16,7 @@ const Skills = () => {
                     <p >
                         {
                             frontEnd.map( el => 
-                                <span>
+                                <span key={backEndKey++}>
                                     {el.name} <img src={el.img} alt={el.name}/>
                                 </span>
                             )
@@ -25,7 +26,7 @@ const Skills = () => {
                     <p>
                         {
                             backEnd.map( el => 
-                                <span>
+                                <span key={frontEndKey++}>
                                     {el.name} <img src={el.img} alt={el.name}/>
                                 </span>
                             )

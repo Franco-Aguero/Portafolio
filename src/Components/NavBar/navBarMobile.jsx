@@ -6,19 +6,19 @@ import s from './navBarMobile.module.css'
 
 const NavBarMobile = () => {
     const { nameList } = informationUsed, {spacebarToDash} = utils;
-    let [showMenu, setShowMenu] = useState(false)
-    let [width, setWidth] = useState(window.innerWidth)
+    let [showMenu, setShowMenu] = useState(false) , nameListKey = 0;
+    let [width, setWidth] = useState(window.innerWidth);
 
     const togleMenu = () => {
         setShowMenu(showMenu = !showMenu)
     }
     
-    useEffect(() => {
+    useEffect((width) => {
         const handleResize = () => setWidth(width = window.innerWidth)
         window.addEventListener('resize', handleResize)
     })
     
-    useEffect(()=>{
+    useEffect((showMenu)=>{
         if(width > 768)setShowMenu(showMenu = true);
         if(width < 768 && showMenu)setShowMenu(showMenu = false);
     },[width])
@@ -36,7 +36,7 @@ const NavBarMobile = () => {
                         <ul>
                             {
                                 nameList.map( el =>
-                                    <li>
+                                    <li key={nameListKey++}>
                                         <a href={`#${spacebarToDash(el.es)}`} onClick={ ()=> width > 768? null : togleMenu()}> 
                                             {el.es} {el.icon}
                                         </a>

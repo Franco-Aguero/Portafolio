@@ -1,4 +1,4 @@
-export default {
+const informationUsed = {
     sectionTitle: {es:"Educación", en:"",},
     certificateList: [
         {   
@@ -13,3 +13,4 @@ export default {
         }
     ]
 }
+export default informationUsed;

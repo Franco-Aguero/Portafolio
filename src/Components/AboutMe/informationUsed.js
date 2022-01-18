@@ -1,4 +1,4 @@
-export default {
+const informationUsed = {
     sectionTitle: {es: "Sobre mi", en:"",},
     paragraph1: {
         es:`Me llamo Franco, soy de Buenos Aires, Argentina.
@@ -19,3 +19,4 @@ export default {
     },
     textCv: { es:"Descargar", en:"",}
 }
+export default informationUsed;

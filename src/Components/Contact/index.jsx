@@ -6,7 +6,7 @@ import s from './Contact.module.css';
 const Contact = () => {
     const { sectionTitle, waysToContact } = informationUsed;
     let [width, setWidth] = useState(window.innerWidth);
-    let [changingBg, setChangingBg] = useState(false);
+    let [changingBg, setChangingBg] = useState(false), contactCircleKey = 0;
     useEffect(() => {
         const handleResize = () => setWidth(width = window.innerWidth)
         window.addEventListener('resize', handleResize)
@@ -18,7 +18,7 @@ const Contact = () => {
             <h1 style={{marginBottom:"3rem"}}>{sectionTitle.es}</h1>
             <div className={s.ContainerCircle}>
                 {
-                    waysToContact.map( el => <ContactCircle
+                    waysToContact.map( el => <ContactCircle key={contactCircleKey++}
                         image={el.img} url={el.url} name={el.name} bg={!changingBg ? el.bg :"none"}
                         />
                     )

@@ -3,7 +3,7 @@ import informationUsed from './informationUsed';
 import s from './Education.module.css';
 
 const Education = () => {
-    const { sectionTitle, certificateList} = informationUsed;
+    const { sectionTitle } = informationUsed;
     return (
         <section className={s.SectionContainer} id="Educacion">
             <h1 style={{textAlign:"center"}}>{sectionTitle.es}</h1>

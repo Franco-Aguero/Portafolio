@@ -2,7 +2,7 @@ import PokeApp from '../Images/PokeApp2.png';
 import NoteBlock from '../Images/BlockOfNote2.png';
 import Wallet from '../Images/wallet.png';
 import Skillify from '../Images/skillify.png';
-export default {
+const informationUsed = {
     sectionTitle: {es:"Proyectos", en:"",},
     projectList: [
         {
@@ -52,4 +52,4 @@ export default {
         }
     ],
 }
-//es=Español-en=ingles
+export default informationUsed;

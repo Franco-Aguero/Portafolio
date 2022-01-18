@@ -1,4 +1,4 @@
-export default {
+const informationUsed = {
     title:{
         es:"¡Hola!",
         en:"",
@@ -8,3 +8,4 @@ export default {
         en:"",
     }
 }
+export default informationUsed;
