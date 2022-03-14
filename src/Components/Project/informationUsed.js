@@ -2,6 +2,7 @@ import PokeApp from '../Images/PokeApp2.png';
 import NoteBlock from '../Images/BlockOfNote2.png';
 import Wallet from '../Images/wallet.png';
 import Skillify from '../Images/skillify.png';
+import LoginInterface from "../Images/loginInterface.png"
 const informationUsed = {
     sectionTitle: {es:"Proyectos", en:"",},
     projectList: [
@@ -25,6 +26,18 @@ const informationUsed = {
             information:{
                 es: `Esta aplicación fue pensada con el objetivo de que los usuarios puedan pagar cuentas, transferir,
                 retirar y mucho mas.`,
+                en:``,
+            }
+        },
+        {
+            name:"Login Interface",
+            img:LoginInterface,
+            url:"https://github.com/Franco-Aguero/login-interface",
+            FrontTech:"El Front-End se llevo acabo con: React-Hook-Form | Sweet Alert2 | CSS.",
+            BackTech:null,
+            information:{
+                es: `Este es un maquetado de login para una página utilizada en Brasil. Si el usuario se loguea 
+                exitosamente, se guarda el token en el local storage.`,
                 en:``,
             }
         },
