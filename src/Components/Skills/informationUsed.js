@@ -3,6 +3,8 @@ import Css3 from '../Images/css3.png';
 import JavaScript from '../Images/javascript.png'
 import ReactJs from '../Images/react.png';
 import ReduxJs from '../Images/redux.png';
+import Sass from '../Images/sass.png';
+import Tailwind from '../Images/tailwind.png';
 import Node from '../Images/node.png';
 import Express from '../Images/express.svg';
 import Postgresql from '../Images/postgresql.png';
@@ -14,6 +16,8 @@ const informationUsed = {
         { name:"JavaScript", img: JavaScript},
         { name:"React", img: ReactJs},
         { name:"Redux", img: ReduxJs},
+        { name:"Sass", img: Sass},
+        { name:"Tailwind css", img: Tailwind},
     ],
     backEnd:[
         {name:"Node", img:Node},
