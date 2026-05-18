@@ -1,54 +1,61 @@
-import React, { useEffect, useState } from 'react';
-import { UilBars, UilTimesSquare } from '@iconscout/react-unicons';
-import informationUsed from './informationUsed';
-import utils from '../Utils/utils';
-import s from './navBarMobile.module.css'
+import React, { useEffect, useState } from "react";
+import { UilBars, UilTimesSquare } from "@iconscout/react-unicons";
+import informationUsed from "./informationUsed.jsx";
+import utils from "../Utils/utils";
+import s from "./navBarMobile.module.css";
 
 const NavBarMobile = () => {
-    const { nameList } = informationUsed, {spacebarToDash} = utils;
-    let [showMenu, setShowMenu] = useState(false) , nameListKey = 0;
-    let [width, setWidth] = useState(window.innerWidth);
+  const { nameList } = informationUsed,
+    { spacebarToDash } = utils;
+  let [showMenu, setShowMenu] = useState(false),
+    nameListKey = 0;
+  let [width, setWidth] = useState(window.innerWidth);
 
-    const togleMenu = () => {
-        setShowMenu(showMenu = !showMenu)
-    }
-    
-    useEffect((width) => {
-        const handleResize = () => setWidth(width = window.innerWidth)
-        window.addEventListener('resize', handleResize)
-    })
-    
-    useEffect((showMenu)=>{
-        if(width > 768)setShowMenu(showMenu = true);
-        if(width < 768 && showMenu)setShowMenu(showMenu = false);
-    },[width])
+  const togleMenu = () => {
+    setShowMenu((showMenu = !showMenu));
+  };
 
-    return (
-            <footer className={s.footerNavDown} id={showMenu ? s.footerNavTop : 'null'}>
-                { 
-                !showMenu?
-                    <> 
-                        <a href="#Sobre-mi" id={s.name}>Franco</a>
-                        <UilBars id={s.menu} onClick={ () => togleMenu()}/>
-                    </>
-                : 
-                    <> 
-                        <ul>
-                            {
-                                nameList.map( el =>
-                                    <li key={nameListKey++}>
-                                        <a href={`#${spacebarToDash(el.es)}`} onClick={ ()=> width > 768? null : togleMenu()}> 
-                                            {el.es} {el.icon}
-                                        </a>
-                                    </li>
-                                )                 
-                            }
-                            <UilTimesSquare id={s.navClose} onClick={ () => togleMenu() }/>
-                        </ul>
-                    </>
-                }
-            </footer>
-    )
-}
+  useEffect((width) => {
+    const handleResize = () => setWidth((width = window.innerWidth));
+    window.addEventListener("resize", handleResize);
+  });
+
+  useEffect(
+    (showMenu) => {
+      if (width > 768) setShowMenu((showMenu = true));
+      if (width < 768 && showMenu) setShowMenu((showMenu = false));
+    },
+    [width],
+  );
+
+  return (
+    <footer className={s.footerNavDown} id={showMenu ? s.footerNavTop : "null"}>
+      {!showMenu ? (
+        <>
+          <a href="#Sobre-mi" id={s.name}>
+            Franco
+          </a>
+          <UilBars id={s.menu} onClick={() => togleMenu()} />
+        </>
+      ) : (
+        <>
+          <ul>
+            {nameList.map((el) => (
+              <li key={nameListKey++}>
+                <a
+                  href={`#${spacebarToDash(el.es)}`}
+                  onClick={() => (width > 768 ? null : togleMenu())}
+                >
+                  {el.es} {el.icon}
+                </a>
+              </li>
+            ))}
+            <UilTimesSquare id={s.navClose} onClick={() => togleMenu()} />
+          </ul>
+        </>
+      )}
+    </footer>
+  );
+};
 
 export default NavBarMobile;
