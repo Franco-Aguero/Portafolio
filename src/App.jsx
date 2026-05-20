@@ -12,13 +12,15 @@ const App = () => {
   return (
     <div className="App">
       <Route path="/" component={NavBarMobile} />
-      <Route path="/" component={Background} />
-      <Route path="/" component={Start} />
-      <Route path="/" component={AboutMe} />
-      <Route path="/" component={Skills} />
-      <Route path="/" component={Project} />
-      <Route path="/" component={Education} />
-      <Route path="/" component={Contact} />
+      <div className="mesh">
+        <Route path="/" component={Background} />
+        <Route path="/" component={Start} />
+        <Route path="/" component={AboutMe} />
+        <Route path="/" component={Skills} />
+        <Route path="/" component={Project} />
+        <Route path="/" component={Education} />
+        <Route path="/" component={Contact} />
+      </div>
     </div>
   );
 };

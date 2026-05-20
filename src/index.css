@@ -1,44 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
-html{
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: 'Hind', sans-serif, "Helvetica Neue", 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    "Hind", sans-serif, "Helvetica Neue", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-page);
   color: var(--color-1);
 }
 body::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
 }
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
   background: rgb(0, 0, 0);
-  
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background: var(--color-3);
   border-radius: 6px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-:root{
+:root {
   --size-1: 1rem;
   --size-1-1: 1.1rem;
   --size-2: 1.25rem;
   --size-3: 1.5rem;
   --color-1: white;
   --color-2: #787272;
-  --color-3: #2a72ce;
-  --color-arrow-L-R: #2C5364;
+  --color-3: #a855f7;
+  --color-arrow-L-R: #a855f7;
   --bg-page: black;
-  --bg-button: linear-gradient( 164deg,#8415bf , #3e0288 56px);
+  --bg-button: linear-gradient(164deg, #8415bf, #3e0288 56px);
+  --color-bubble-1: #8816c5;
+  --color-bubble-2: #3e0288;
+  --color-bubble-3: #4e077d;
+}
+@media (max-width: 768px) {
+  .mesh {
+    max-width: 100%;
+    width: calc(100% - 2rem);
+    padding: 0px 1rem;
+  }
 }
