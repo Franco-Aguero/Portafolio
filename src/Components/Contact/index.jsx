@@ -1,31 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import ContactCircle from '../Views/ContactCircle';
-import informationUsed from './informationUsed';
-import s from './Contact.module.css';
+import React from "react";
+import informationUsed from "./informationUsed";
+import s from "./Contact.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
-    const { sectionTitle, waysToContact } = informationUsed;
-    let [width, setWidth] = useState(window.innerWidth);
-    let [changingBg, setChangingBg] = useState(false), contactCircleKey = 0;
-    useEffect(() => {
-        const handleResize = () => setWidth(width = window.innerWidth)
-        window.addEventListener('resize', handleResize)
-        width >= 768 ? setChangingBg(changingBg = true) : setChangingBg(changingBg = false)
-    },[width])
+  const { sectionTitle, waysToContact } = informationUsed;
 
-    return (
-        <section className={s.SectionContainer} id="Contacto">
-            <h1 style={{marginBottom:"3rem"}}>{sectionTitle.es}</h1>
-            <div className={s.ContainerCircle}>
-                {
-                    waysToContact.map( el => <ContactCircle key={contactCircleKey++}
-                        image={el.img} url={el.url} name={el.name} bg={!changingBg ? el.bg :"none"}
-                        />
-                    )
-                }
+  return (
+    <section className={s.SectionContainer} id="Contacto">
+      <h1>{sectionTitle.es}</h1>
+
+      <div className={s.ContainerGrid}>
+        {waysToContact.map((el, index) => (
+          <a
+            key={index}
+            href={el.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={s.Card}
+          >
+            <div className={s.IconContainer} style={{ color: el.bg }}>
+              <FontAwesomeIcon icon={el.img} />
             </div>
-        </section>
-    )
-}
+
+            <div className={s.TextContent}>
+              <h3>{el.name}</h3>
+              <span>{el.label || `Conectar via ${el.name}`}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Contact;
