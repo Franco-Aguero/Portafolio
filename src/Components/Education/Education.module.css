@@ -1,31 +1,238 @@
-.SectionContainer{
-    height: auto;
-    padding-bottom: 4rem;
+.SectionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.header {
+  display: flex;
+  margin: auto;
+}
+.header h1 {
+  margin-bottom: 3rem;
 }
 
-.SectionContainer div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.timeline {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  position: relative;
 }
 
-.SectionContainer div article{
-    width: 92%;
-    display: flex;
+/* LINEA VERTICAL */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 48px;
+  top: 65px;
+  bottom: 65px;
+  width: 1px;
+  background: rgba(168, 85, 247, 0.35);
+}
+
+.card {
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 2rem;
+  border-radius: 22px;
+  background: rgb(3 3 10 / 87%);
+  border: 1px solid rgba(168, 85, 247, 0.45);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(192, 132, 252, 0.7);
+  box-shadow:
+    0 0 20px rgba(168, 85, 247, 0.15),
+    0 0 50px rgba(168, 85, 247, 0.08);
+}
+
+/* GLOW IZQUIERDO */
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(
+    circle,
+    rgba(168, 85, 247, 0.16) 0%,
+    transparent 70%
+  );
+}
+
+/* PUNTITOS DERECHA */
+.card::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 82px;
+  height: 82px;
+  background-image: radial-gradient(
+    rgba(181, 97, 255, 0.45) 1.2px,
+    transparent 1.2px
+  );
+  background-size: 10px 10px;
+  opacity: 0.45;
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* ICONO */
+.iconContainer {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a855f7;
+  position: relative;
+}
+
+/* GLOW ICONO */
+.iconContainer::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+/* SVG ICON */
+.icon {
+  width: 34px;
+  height: 34px;
+  color: #a855f7;
+}
+
+/* TEXTOS */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.content small {
+  color: #b14cff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.content span {
+  color: #c9c9c9;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+/* YEAR */
+.yearContainer {
+  position: relative;
+  min-width: 150px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(88, 28, 135, 0.22);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.yearContainer span {
+  color: #e9d5ff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* PUNTITOS DERECHA */
+.card::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: radial-gradient(
+    rgba(168, 85, 247, 0.5) 1.2px,
+    transparent 1.2px
+  );
+  background-size: 12px 12px;
+  -webkit-mask-image: radial-gradient(circle, black 20%, transparent 70%);
+  mask-image: radial-gradient(circle, black 20%, transparent 70%);
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.left,
+.yearContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.yearContainer {
+  position: relative;
+  min-width: 150px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(15, 7, 32, 0.6);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .timeline::before {
+    display: none;
+  }
+
+  .card {
     flex-direction: column;
     align-items: flex-start;
-}
+    gap: 1.3rem;
+  }
 
-@media (min-width:768px) {
-    .SectionContainer{
-        padding: 5rem 0 4rem;
-    }
-    
-    .SectionContainer div article{
-        width: 68%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .yearContainer {
+    width: 100%;
+  }
+
+  .card::after {
+    right: -8px;
+    top: auto;
+    bottom: 46px;
+    transform: none;
+  }
 }
